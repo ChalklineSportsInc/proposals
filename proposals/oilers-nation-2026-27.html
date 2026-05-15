@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  /* Oilers palette + accents */
+  :root {
+    --navy:       #041E42;
+    --navy-mid:   #0a2a4a;
+    --navy-deep:  #0d3050;
+    --orange:     #FF4C00;
+    --royal:      #1B6FC8;
+    --ice:        #C8E6FF;
+    --gold:       #F5A623;
+    --white:      #ffffff;
+    --muted:      #a0b0c8;
+    --light:      #d0e0f0;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--navy);
+    color: var(--white);
+    padding: 24px 16px;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .header { text-align: center; margin-bottom: 24px; }
+  .eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 3px; color: var(--orange); text-transform: uppercase; margin-bottom: 8px; }
+  .eyebrow a { color: var(--orange); text-decoration: none; }
+  .eyebrow a:hover { text-decoration: underline; }
+  h1 { font-size: 26px; font-weight: 900; color: var(--white); line-height: 1.15; margin-bottom: 6px; }
+  h1 span { color: var(--orange); }
+  .sub { font-size: 13px; color: var(--muted); line-height: 1.5; }
+  .divider { border: none; border-top: 1px solid var(--orange); margin: 18px 0; opacity: 0.3; }
+
+  /* Game cards -- orange accent (brand primary) */
+  .game-card { background: var(--navy-mid); border-radius: 12px; padding: 20px; border-top: 4px solid var(--orange); margin-bottom: 16px; }
+  .game-tag { font-size: 10px; font-weight: 700; letter-spacing: 2px; color: var(--orange); text-transform: uppercase; margin-bottom: 8px; }
+  .game-card h2 { font-size: 24px; font-weight: 900; color: var(--white); margin-bottom: 10px; line-height: 1.15; }
+  .game-card .desc { font-size: 13px; color: var(--muted); line-height: 1.6; margin-bottom: 16px; }
+  .stat-row { margin-bottom: 10px; }
+  .stat-row:last-child { margin-bottom: 0; }
+  .stat-row-label { font-size: 9px; font-weight: 700; letter-spacing: 2px; color: var(--ice); text-transform: uppercase; margin-bottom: 3px; }
+  .stat-row-value { font-size: 13px; color: var(--light); font-weight: 600; line-height: 1.4; }
+
+  /* Marketing -- royal blue accent */
+  .section { border-radius: 12px; padding: 20px; margin-bottom: 16px; }
+  .section ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .section ul li { font-size: 13px; color: var(--muted); display: flex; align-items: flex-start; gap: 10px; line-height: 1.5; }
+  .section ul li .dot { font-size: 9px; font-weight: 900; border-radius: 50%; min-width: 16px; height: 16px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+
+  .marketing { background: #0a1f3a; border-top: 4px solid var(--royal); }
+  .marketing h3 { font-size: 11px; font-weight: 700; color: var(--royal); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 14px; }
+  .marketing .dot { background: var(--royal); color: var(--white); }
+
+  /* Questions -- gold accent */
+  .questions { background: #1a1a0a; border-top: 4px solid var(--gold); }
+  .questions h3 { font-size: 11px; font-weight: 700; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 14px; }
+  .questions { background: #0f1a2a; }
+  .questions .dot { background: var(--gold); color: var(--navy); }
+
+  /* Why This Works -- ice/teal accent */
+  .why { background: #071828; border-top: 4px solid var(--ice); }
+  .why h3 { font-size: 11px; font-weight: 700; color: var(--ice); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 14px; }
+  .why .dot { background: var(--ice); color: var(--navy); }
+
+  .footer { text-align: center; margin-top: 20px; font-size: 11px; color: #4a6070; letter-spacing: 1px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="eyebrow"><a href="https://oilersnation.com/" target="_blank">OilersNation.com</a> &nbsp;|&nbsp; 2026-27 Season</div>
+  <h1>Two Games. One Season. <span>All Oilers.</span></h1>
+  <div class="sub">A free-to-play fan engagement concept for the entire 2026-27 Edmonton Oilers season</div>
+</div>
+
+<hr class="divider">
+
+<div class="game-card">
+  <div class="game-tag">Game 1 &nbsp;|&nbsp; Season Long</div>
+  <h2>OilersNation Pick'em Fantasy</h2>
+  <div class="desc">The ultimate season-long competition for die-hard Oilers fans. Make your picks every game day and climb the leaderboard all the way to the playoffs.</div>
+  <div class="stat-row">
+    <div class="stat-row-label">Game Play</div>
+    <div class="stat-row-value">6 picks per game day, every game all season long</div>
+  </div>
+  <div class="stat-row">
+    <div class="stat-row-label">Leaderboard</div>
+    <div class="stat-row-value">Weekly, Monthly and Season-Long standings</div>
+  </div>
+  <div class="stat-row">
+    <div class="stat-row-label">Winners</div>
+    <div class="stat-row-value">Prizes at weekly, monthly and season milestones</div>
+  </div>
+</div>
+
+<div class="game-card">
+  <div class="game-tag">Game 2 &nbsp;|&nbsp; Daily</div>
+  <h2>Oilers Game Day Confidence Game</h2>
+  <div class="desc">High energy. High stakes. Every game night is a new chance to win. Wager your Oiler Bucks on tonight's markets and prove you've got the hockey IQ to cash in.</div>
+  <div class="stat-row">
+    <div class="stat-row-label">Game Play</div>
+    <div class="stat-row-value">100 Oiler Bucks wagered across fresh daily markets</div>
+  </div>
+  <div class="stat-row">
+    <div class="stat-row-label">Leaderboard</div>
+    <div class="stat-row-value">Single-night standings, reset every game day</div>
+  </div>
+  <div class="stat-row">
+    <div class="stat-row-label">Winners</div>
+    <div class="stat-row-value">Prizes awarded every single game night</div>
+  </div>
+</div>
+
+<div class="section marketing">
+  <h3>Marketing Ideas</h3>
+  <ul>
+    <li><span class="dot">&#9733;</span> Embed game picks directly inside OilersNation game preview articles -- fans pick right from the content they're already reading</li>
+    <li><span class="dot">&#9733;</span> Publish nightly and weekly winners in dedicated OilersNation articles to drive recognition, FOMO, and repeat play</li>
+    <li><span class="dot">&#9733;</span> Guest picks from OilersNation writers and personalities to drive competition and traffic</li>
+    <li><span class="dot">&#9733;</span> Leaderboard callouts on the homepage all season long</li>
+    <li><span class="dot">&#9733;</span> Social-ready winner cards fans can share after every game night</li>
+  </ul>
+</div>
+
+<div class="section questions">
+  <h3>Open Questions for Client</h3>
+  <ul>
+    <li><span class="dot">?</span> What is the total prize pool budget for the season?</li>
+    <li><span class="dot">?</span> Is there a presenting sponsor in mind, or is that open?</li>
+    <li><span class="dot">?</span> What sponsor categories make the most sense?</li>
+    <li><span class="dot">?</span> Prize format: cash, merch, tickets, or a mix?</li>
+    <li><span class="dot">?</span> Are nightly prizes sponsor-funded or house-funded?</li>
+  </ul>
+</div>
+
+<div class="section why">
+  <h3>Why This Works</h3>
+  <ul>
+    <li><span class="dot">+</span> Two games, two audiences -- season grinders and nightly players</li>
+    <li><span class="dot">+</span> Daily touchpoints drive repeat visits to OilersNation all season long</li>
+    <li><span class="dot">+</span> Natural sponsor integration across both formats</li>
+    <li><span class="dot">+</span> Winner articles and leaderboards build community and social sharing</li>
+    <li><span class="dot">+</span> Free to play removes all barriers to entry for every fan</li>
+  </ul>
+</div>
+
+<div class="footer">CONFIDENTIAL &nbsp;|&nbsp; OILERSNATION.COM &nbsp;|&nbsp; CONCEPT DRAFT 2026</div>
+
+</body>
+</html>
